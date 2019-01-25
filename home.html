@@ -1,0 +1,66 @@
+<script src="js/tabSwitchHome.js"></script>
+<script src="js/tagKnop.js"></script>
+
+<article id="jobsTab">
+    <nav id="navTab">
+        <div id="jobTab" class="tabSelected">
+            <h2>jobs</h2>
+            <div></div>
+
+        </div>
+        <div id="talentTab" class="">
+            <h2>talent</h2>
+            <div></div>
+        </div>
+    </nav>
+    <article id="jobTabContent" class="">
+        <div class="tagBox">
+            <h4 class="tag">#fashion</h4>
+            <h4 class="tag">#graphicdesign</h4>
+            <h4 class="tag">#female</h4>
+            <h4 class="tag">#male</h4>
+            <h4 class="tag">#fashion</h4>
+            <h4 class="tag">#graphicdesign</h4>
+            <h4 class="tag">#female</h4>
+            <h4 class="tag">#fashion</h4>
+            <h4 class="tag">#graphicdesign</h4>
+        </div>
+
+        <article>
+            <h3>available jobs</h3>
+            <div class="borderline"></div>
+        </article>
+        <div class="sideSlide">
+            <div id="allJobs"></div>
+        </div>
+    </article>
+
+    <article id="talentTabContent" class="hidden">
+        <div class="tagBox">
+            <h4 class="tag">#fashion</h4>
+            <h4 class="tag">#graphicdesign</h4>
+            <h4 class="tag">#female</h4>
+            <h4 class="tag">#male</h4>
+            <h4 class="tag">#fashion</h4>
+            <h4 class="tag">#graphicdesign</h4>
+            <h4 class="tag">#graphicdesign</h4>
+            <h4 class="tag">#female</h4>
+            <h4 class="tag">#male</h4>
+        </div>
+
+        <article>
+            <h3>available talent</h3>
+            <div class="borderline"></div>
+        </article>
+        <div class="sideSlide">
+            <div id="allTalent"></div>
+        </div>
+    </article>
+
+</article>
+<script type="text/javascript">
+    $(function() {
+        $("#allJobs").load("allJobs.html");
+        $("#allTalent").load("allTalent.html");
+    });
+</script>

@@ -1,0 +1,59 @@
+<section class="profile">
+    <div class="profileInfo">
+        <div class="profilePic">
+            <div class="settings invis"><img src="icons/W/settings.png" alt=""></div>
+            <img class="profileImg" src="faces/tommy.jpg" alt="">
+        </div>
+        <h2>Tommy Segura</h2>
+        <div class="profileSkills">
+            <img src="icons/WR/pho.png" alt="">
+            <img src="icons/WR/des.png" alt="">
+            <img src="icons/WR/edi.png" alt="">
+        </div>
+        <div class="profileBio">
+            <p>Tommy is the name and I run a brand called BloX, I'm always on the lookout for talent and gear!</p>
+        </div>
+        <div class="profileSocials">
+            <img src="icons/WR/social/insta.png" alt="">
+            <img src="icons/WR/social/behance.png" alt="">
+            <img src="icons/WR/social/dribble.png" class="hidden" alt="">
+            <img src="icons/WR/social/facebook.png" class="hidden" alt="">
+            <img src="icons/WR/social/pinterest.png" alt="">
+            <img src="icons/WR/social/add.png" class="hidden" alt="">
+            <p>www.portfoliosite.nl</p>
+        </div>
+    </div>
+    <article id="profileTab">
+        <nav id="navTab">
+            <div id="leftTabOP" class="tabSelected">
+                <h2>inventory</h2>
+                <div></div>
+
+            </div>
+            <div id="rightTabOP" class="">
+                <h2>jobs</h2>
+                <div></div>
+            </div>
+        </nav>
+        <div class="profileTabContent"></div>
+        <article id="leftTabContentOP" class="">
+            <div id="otherInventory"></div>
+        </article>
+        <article id="rightTabContentOP" class="hidden">
+            <div class="sideSlide">
+                <div id="otherJobs">
+                </div>
+            </div>
+        </article>
+    </article>
+
+
+    <script type="text/javascript">
+        $(function() {
+            $("#otherInventory").load("otherInventory.html");
+            $("#otherJobs").load("otherJobs.html");
+        });
+    </script>
+
+</section>
+<script src="js/tabSwitchOtherProfile.js"></script>
